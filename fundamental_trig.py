@@ -4,7 +4,8 @@
 of unit circle by arc-length; i.e. no power series, no circular definitions in
 terms of complex exponentials, and no right triangles.
 
-Caleb Levy, March 2015."""
+Caleb Levy, March 2015.
+"""
 
 import numpy as np
 import matplotlib.pyplot as plt
