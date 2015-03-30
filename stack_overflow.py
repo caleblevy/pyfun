@@ -30,8 +30,8 @@ def double%s(x):
 
     prog = [program_start] + def_list + [
         """
-
-b = double%s(a)""" % str(i+1)
+b = double%s(a)
+""" % str(i+1)
         ]
     prog_text = ''.join(prog)
     with open('rec.py', 'w') as f:
