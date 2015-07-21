@@ -13,7 +13,10 @@ import sys
 import time
 import os
 
-say = lambda phrase: os.system('say '+phrase)  # Run phrase through OS X say
+
+def say(phrase):
+    """Say phrase out loud using os x say command."""
+    os.system('say '+phrase)
 
 
 def sing_praise(repetitions=1000):
@@ -36,14 +39,15 @@ def sing_praise(repetitions=1000):
 
     for i in range(1, reps+1):
         time.sleep(.01)
-        if i == 1:
-            say("1st Refrain:")
+        refrain_string = str(i) + "%s Refrain:"
+        if str(i)[-1] == 1:
+            say(refrain_string % 'st')
         elif i == 2:
-            say("2nd Refrain:")
+            say(refrain_string % 'nd')
         elif i == 3:
-            say("3rd Refrain:")
+            say(refrain_string % 'rd')
         else:
-            say("%sth Refrain:" % str(i))
+            say(refrain_string % 'th')
         say("Praise YOWWAY!")  # YHWH must be spelled phonetically for OS X say
         say("Praise be to God!")
 
