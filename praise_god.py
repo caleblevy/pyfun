@@ -48,7 +48,7 @@ def sing_praise(repetitions=1000):
             say(refrain_string % 'rd')
         else:
             say(refrain_string % 'th')
-        say("Praise YOWWAY!")  # YHWH must be spelled phonetically for OS X say
+        say("Praise Yowway!")  # YHWH must be spelled phonetically for OS X say
         say("Praise be to God!")
 
     say("Amen.")  # Conclude the prayer
