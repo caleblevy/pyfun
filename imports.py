@@ -1,6 +1,6 @@
 """Import everything available in Python 3.5.2"""
 
-'Processing Services'
+# Processing Services
 import string  # Common string operations
 import re  # Regular expression operations
 import difflib  # Helpers for computing deltas
@@ -10,11 +10,11 @@ import stringprep  # Internet String Preparation
 import readline  # GNU readline interface
 import rlcompleter  # Completion function for GNU readline
 
-'Binary Data Services'
+# Binary Data Services
 import struct  # Interpret bytes as packed binary data
 import codecs  # Codec registry and base classes
 
-'Data Types'
+# Data Types
 import datetime  # Basic date and time types
 import calendar  # General calender-related functions
 import collections  # Container datatypes
@@ -29,7 +29,7 @@ import pprint  # Data pretty printer
 import reprlib  # Alternate repr() implementation
 import enum  # Support for enumerations
 
-'Numeric and Mathematical Modules'
+# Numeric and Mathematical Modules
 import numbers  # Numeric abstract base classes
 import math  # Mathematical functions
 import cmath  # Mathematical functions for complex numbers
@@ -38,12 +38,12 @@ import fractions  # Rational numbers
 import random  # Generate pseudo-random numbers
 import statistics  # Mathematical statistics functions
 
-'Functional Programming Modules'
+# Functional Programming Modules
 import itertools  # Functions creating iterators for efficient looping
 import functools  # Higher-order functions and operations on callable objects
 import operator  # Standard operators as functions
 
-'File and Directory Access'
+# File and Directory Access
 import pathlib  # Object-oriented filesystem paths
 import os.path  # Common pathname manipulations
 import fileinput  # Iterate over lines from multiple input streams
@@ -56,7 +56,7 @@ import linecache  # Random access to text lines
 import shutil  # High-level file operations
 import macpath  # Mac OS 9 path manipulation functions
 
-'Data Persistence'
+# Data Persistence
 import pickle  # Python object serialization
 import copyreg  # Register pickle support functions
 import shelve  # Python object persistence
@@ -64,7 +64,7 @@ import marshal  # Internal Python object serialization
 import dbm  # Interfaces to Unix "databases"
 import sqlite3  # DB-API 2.0 interface for SQLite databases
 
-'Data Compression and Archiving'
+# Data Compression and Archiving
 import zlib  # Compression compatible with gzip
 import gzip  # SUpport for gzip files
 import bz2  # Support for bzip2 compression
@@ -72,18 +72,18 @@ import lzma  # Compression using the LZMA algorithm
 import zipfile  # Work with ZIP archives
 import tarfile  # Read and write tar archive files
 
-'File Formats'
+# File Formats
 import csv  # CSV File Reading and Writing
 import configparser  # Configuration file parser
 import netrc  # netrc file processing
 import xdrlib  # Encode and decode XDR data
 import plistlib  # Generate and parse Mac OS X .plist files
 
-'Cryptographic Services'
+# Cryptographic Services
 import hashlib  # Secure hashes and message digests
 import hmac  # Keyed-Hashing for Message Authentication
 
-'Generic Operating System Services'
+# Generic Operating System Services
 import os  # Miscellaneous operating system interfaces
 import io  # Core tools for working with streams
 import time  # Time access and conversions
@@ -101,7 +101,7 @@ import platform  # Access to underlying platform's identifying data
 import errno  # Standard errno system symbols
 import ctypes  # A foreign function library for python
 
-'Concurrent Execution'
+# Concurrent Execution
 import threading  # Thread-based parallelism
 import multiprocessing  # Process-based parallelism
 import concurrent
@@ -113,7 +113,7 @@ import dummy_threading  # Drop-in replacement for the threading module
 import _thread  # Low-level threading API
 import _dummy_thread  # Drop-in replacement for the _thread module
 
-'Interprocess Communication and Networking'
+# Interprocess Communication and Networking
 import socket  # Low-level networking interface
 import ssl  # TLS/SSL wrapper for socket objects
 import select  # Waiting for I/O completion
@@ -124,7 +124,7 @@ import asynchat  # Asyncronous socket command/response handler
 import signal  # Set handlers for asynchronous events
 import mmap  # Memory-mapped file support
 
-'Internet Data Handling'
+# Internet Data Handling
 import email  # An email and MIME handling package
 import json  # JSON encoder and decoder
 import mailcap  # Mailcap file handling
@@ -136,11 +136,11 @@ import binascii  # Convert between binary and ASCII
 import quopri  # Encode and decode MIME quoted-printable data
 import uu  # Encode and decode uuencodef files
 
-'Structured Markup Processing Tools'
+# Structured Markup Processing Tools
 import html  # HyperText Markup Language support
 import html.parser  # Simple HTML and XHTML parser
 import html.entities  # Definitions of HTML general entities
-'XML Processing Modules'
+# XML Processing Modules
 import xml.etree.ElementTree  # The ElementTree XML API
 import xml.dom  # The Document Object Model API
 import xml.dom.minidom  # Minimal DOM implementation
@@ -151,7 +151,7 @@ import xml.sax.saxutils  # SAX Utilities
 import xml.sax.xmlreader  # Interface for XML parsers
 import xml.parsers.expat  # Fast XML parsing using Expat
 
-'Internet Protocols and Support'
+# Internet Protocols and Support
 import webbrowser  # Convenient Web-browser controller
 import cgi  # Common Gateway Interface support
 import cgitb  # Traceback manager for CGI scripts
@@ -181,7 +181,7 @@ import xmlrpc.client  # XML-RPC client access
 import xmlrpc.server  # XML-RPC server access
 import ipaddress  # IPv4/IPv6 manipulation library
 
-'Multimedia Services'
+# Multimedia Services
 import audioop  # Manipulate raw audio data
 import aifc  # Read and write AIFF and AIFC files
 import sunau  # Read and write Sun AU files
@@ -192,22 +192,22 @@ import imghdr  # Determin the type of an image
 import sndhdr  # Determine the type of sound file
 # import ossaudiodev
 
-'Internationalization'
+# Internationalization
 import gettext  # Multilingual internationalization services
 import locale  # Internationalization services
 
-'Program Frameworks'
+# Program Frameworks
 import turtle  # Turtle graphics
 import cmd  # Support for line-oriented command interpreters
 import shlex  # Simple lexical analysis
 
-'Graphical User Interfaces with Tk'
+# Graphical User Interfaces with Tk
 import tkinter  # Python interface to Tcl/Tk
 import tkinter.ttk  # Tk themed widgets
 import tkinter.tix  # Extension widgets for Tk
 import tkinter.scrolledtext  # Scrolled Text Widget
 
-'Development Tools'
+# Development Tools
 import typing  # Support for type hints
 import pydoc  # Documentation generator and online help system
 import doctest  # Test interactive Python examples
@@ -216,24 +216,24 @@ import unittest.mock  # mock object library
 import test  # Regression tests package for Python
 import test.support  # Utilities for the Python test suite
 
-'Debugging and Profiling'
+# Debugging and Profiling
 import bdb  # Debugger framework
 import faulthandler  # Dump the Python traceback
 import pdb  # The Python Debugger
-'The Python Profilers'
+# The Python Profilers
 import timeit  # Measure execution time of small code snippets
 import trace  # Trace or track Python statement execution
 import tracemalloc  # Trace memory allocations
 
-'Software Packaging and Distribution'
+# Software Packaging and Distribution
 import distutils  # Building and installing Python modules
 import ensurepip  # Bootstrapping the pip installer
 import venv  # Creation of virtual environments
 import zipapp  # Manage executable python zip archives
 
-'Python Runtime Services'
+# Python Runtime Services
 import sys  # System-specific parameters and functions
-import sysconfig  # Provide access to Python's 
+import sysconfig  # Provide access to Python's configuration information
 import builtins  # Built-in objects
 import warnings  # Warning control
 import contextlib  # Utilities for with-statement contexts
@@ -246,18 +246,18 @@ import inspect  # Inspect live objects
 import site  # Site-specific configuration hook
 # import fpectl
 
-'Custom Python Interpreters'
+# Custom Python Interpreters
 import code  # Interpreter base classes
 import codeop  # Compile Python code
 
-'Importing Modules'
+# Importing Modules
 import zipimport  # Import modules from Zip archives
 import pkgutil  # Package extension utility
 import modulefinder  # Find modules used by a script
 import runpy  # Locating and executing Python modules
 import importlib  # The implementation of import
 
-'Python Language Services'
+# Python Language Services
 import parser  # Access Python parse trees
 import ast  # Abstract Syntax Trees
 import symtable  # Access to the compiler's symbol tables
@@ -272,5 +272,5 @@ import compileall  # Byte-compile Python libraries
 import dis  # Disassembler for Python bytecode
 import pickletools  # Tools for pickle developers
 
-'Miscellaneous Tools'
+# Miscellaneous Tools
 import formatter  # Generic output formatting
