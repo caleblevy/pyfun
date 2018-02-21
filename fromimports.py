@@ -82,6 +82,7 @@ from plistlib import *
 # Cryptographic Services
 from hashlib import *
 from hmac import *
+from secrets import *
 
 # Generic Operating System Services
 from os import *
@@ -274,3 +275,5 @@ from pickletools import *
 
 # Miscellaneous Tools
 from formatter import *
+
+from test import *
