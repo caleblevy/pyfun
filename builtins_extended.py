@@ -1,7 +1,5 @@
 """Extra, simple, "builtin-like" functions."""
 
-from collections import deque
-
 
 def subclasstree(cls):
     """Return dictionary whose first key is the class and whose
@@ -16,12 +14,16 @@ def subclasstree(cls):
 
 def subclasses(cls):
     """List all subclasses of cls recursively."""
-    q = deque([cls])
+    p = {cls}
     subclasses = set()
-    while q:
-        c = q.popleft()
-        subclasses.add(c)
-        q.extend(type.__subclasses__(c))
+    while p:
+        subclasses.update(p)
+        q = set()
+        for base in p:
+            for subclass in type.__subclasses__(base):
+                if subclass not in subclasses:
+                    q.add(subclass)
+        p = q
     return subclasses
 
 
